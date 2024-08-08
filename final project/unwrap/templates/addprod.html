@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/unwrap/static/addprod.css">
+<!-- {% extends 'layout.html' %} -->
+
+
+{% block content %}
+<div class="container">
+    <form action="" method="post" class="form">
+        {{ form.hidden_tag() }}
+
+        {{form.name.label(class=label)}}
+        {{form.name(class=input)}}
+        {{form.price.label(class=label)}}
+        {{form.price(class=input)}}
+        {{form.description.label(class=label)}}
+        {{form.description(class=field)}}
+        <button>Submit</button>
+    </form>
+</div>
+{% endblock %}
